@@ -16,6 +16,5 @@ try {
     Set-ADUser -Identity "87ssdd877sd"
 }
 catch {
-    $mensagemErro = $_.Exception.Message
-    Get-GoogleAnswer $mensagemErro
+    Get-GoogleAnswer $_.Exception.Message
 }
